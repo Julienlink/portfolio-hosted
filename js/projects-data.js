@@ -46,7 +46,7 @@ const projectsData = [
     "githubUrl": null,
     "demoUrl": null,
     "links": [],
-    "isHighlighted": true,
+    "isHighlighted": false,
     "tags": ["C#", "Unity", "VR", "modélisation 3D", "Git", "travail d'équipe"],
     "createdAt": "2026-04-21T15:59:00.000Z"
   }

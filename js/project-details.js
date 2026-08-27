@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderProjectDetails(project) {
     // Document Title update
-    document.title = `${project.name} | Portfolio Julien`;
+    document.title = `${project.name} | Portfolio Julien Demaiziere`;
 
     // Title
     titleEl.textContent = project.name;
