@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Premium developer portfolio with git-backed local project manager.",
+  "scripts": {
+    "add": "node admin-cli.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

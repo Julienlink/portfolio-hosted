@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet | Détails</title>
+  <meta name="description" content="Détails du projet.">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+  <!-- Background Glow Meshes -->
+  <div class="bg-mesh">
+    <div class="mesh-1"></div>
+    <div class="mesh-2"></div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">JULIEN.DEV</a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="index.html#projets" class="nav-link">Projets</a>
+        <a href="index.html#a-propos" class="nav-link">À propos</a>
+        <a href="pdf/CV_Julien_Demaiziere.pdf" target="_blank" class="nav-link">Mon CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="details-container">
+      <!-- Back button -->
+      <a href="index.html" class="back-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Retour à l'accueil
+      </a>
+
+      <!-- Title & Tags -->
+      <div class="details-header">
+        <div id="project-badge-container"></div>
+        <h1 class="details-title" id="project-title">Chargement du projet...</h1>
+      </div>
+
+      <!-- Hero Image Banner -->
+      <div class="details-hero">
+        <img id="project-image" src="" alt="Aperçu du projet" style="opacity: 0; transition: opacity 0.3s ease;">
+      </div>
+
+      <!-- Content Grid -->
+      <div class="details-content">
+        <!-- Main Description -->
+        <div class="details-info">
+          <div id="project-description" class="project-description-content">Veuillez patienter pendant le chargement des informations.</div>
+        </div>
+
+        <!-- Meta Sidebar -->
+        <div class="details-meta">
+          <div class="meta-box">
+            <div class="details-meta-title">Technologies</div>
+            <div class="tags" id="project-tags-container" style="margin-bottom: 0;">
+              <!-- Tags list -->
+            </div>
+          </div>
+
+          <div class="meta-box">
+            <div class="details-meta-title">Liens</div>
+            <div class="btn-group" style="flex-direction: column; gap: 0.75rem;" id="project-links-container">
+              <!-- Dynamically populated by project-details.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Section -->
+      <section class="gallery-section" id="gallery-section" style="display: none; margin-top: 4rem;">
+        <h3 style="font-size: 1.75rem; margin-bottom: 1.5rem; position: relative;">Galerie de captures d'écran</h3>
+        <div class="gallery-grid" id="project-gallery-container">
+          <!-- Dynamically populated by project-details.js -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Julien. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" class="footer-link">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" class="footer-link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal Preview -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="" alt="Aperçu grand format">
+  </div>
+
+  <!-- Details logic script -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/project-details.js"></script>
+</body>
+</html>

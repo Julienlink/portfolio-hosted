@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julien | Portfolio Professionnel</title>
+  <meta name="description" content="Découvrez mes projets web, mes compétences techniques et mes réalisations professionnelles.">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+  <!-- Background Glow Meshes -->
+  <div class="bg-mesh">
+    <div class="mesh-1"></div>
+    <div class="mesh-2"></div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">JULIEN.DEV</a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="#projets" class="nav-link">Projets</a>
+        <a href="#a-propos" class="nav-link">À propos</a>
+        <a href="pdf/CV_Julien_Demaiziere.pdf" target="_blank" class="nav-link">Mon CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-subtitle">Développeur Full Stack</div>
+      <h1 class="hero-title">Créer des expériences<br>numériques d'exception</h1>
+      <p class="hero-desc">Conception d'applications web modernes et performantes. Explorez mes projets récents ci-dessous.</p>
+      <div class="btn-group" style="justify-content: center;">
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="pdf/CV_Julien_Demaiziere.pdf" target="_blank" class="btn btn-secondary">Télécharger mon CV</a>
+      </div>
+    </section>
+
+    <!-- Highlighted Project Section -->
+    <section class="highlight-section" id="highlight-section" style="display: none;">
+      <h2 class="section-title">Projet mis en avant</h2>
+      <div id="highlight-project-container">
+        <!-- Will be populated dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="projects-section" id="projets">
+      <h2 class="section-title">Tous les projets</h2>
+      <div class="projects-grid" id="projects-grid-container">
+        <!-- Will be populated dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="a-propos" style="margin-bottom: 5rem;">
+      <h2 class="section-title">À propos de moi</h2>
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 2.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--shadow-premium);">
+        <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+          Bonjour, je m'appelle <strong>Julien</strong>. J'ai été captivé par l'informatique dès le collège et j'ai rapidement décidé d'en faire mon métier.
+        </p>
+        <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+          Après un BAC avec spécialités NSI (Numérique et Sciences Informatiques) et mathématiques, j'ai poursuivi mes études supérieures à l'<strong>IUT informatique du Puy-en-Velay</strong> où j'étudie actuellement en deuxième année.
+        </p>
+        <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+          Je suis fasciné par les jeux vidéo de tous types, et plus particulièrement par ceux en réalité virtuelle (VR). De nature joviale, je sais faire preuve de sérieux et d'implication dans mon travail. Je suis toujours prêt à collaborer et à m'investir pleinement dans des projets d'équipe.
+        </p>
+        <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+          Durant mon temps libre, j'adore concevoir et coder mes propres projets personnels, modéliser en 3D, ou jouer aux jeux vidéo. En hiver, j'aime chausser mes skis pour dévaler les pentes enneigées.
+        </p>
+        <p style="font-size: 1.15rem; color: var(--text-primary); font-weight: 600; text-align: center; margin-top: 2rem;">
+          N'hésitez pas à me contacter ou à consulter mon CV pour de futures opportunités !
+        </p>
+        <div class="btn-group" style="justify-content: center; margin-top: 1.5rem;">
+          <a href="pdf/CV_Julien_Demaiziere.pdf" target="_blank" class="btn btn-primary">Télécharger mon CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Julien. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" class="footer-link">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" class="footer-link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-side logic script -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
